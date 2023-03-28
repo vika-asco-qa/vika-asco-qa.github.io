@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #070817;
+	padding-top: 24px;
+	padding-bottom: 48px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.container {
+	max-width: 700px;
+	margin: auto;
+	width: 100%;
+}
+
+h1 {
+	color: #FF258E;
+	text-shadow: 2px 2px 0px #00BDFF;
+	font-family: 'Press Start 2P';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 31px;
+	line-height: 56px;
+	text-transform: uppercase;
+}
+
+/*Измениние фона текста при выделении*/
+h1::selection {
+	background-color: #00BDFF;
+}
+
+h2 {
+	color: #FFFFFF;
+	text-shadow: 2px 2px 0px #00bdff;
+	font-size: 25px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+h2::selection {
+	background-color: #00BDFF;
+}
+
+p {
+	color: #FFFFFF;
+	font-family: 'Press Start 2P';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+	margin-top: 16px;
+}
+
+/*Измениние фона текста при выделении*/
+p::selection {
+	background-color: #00BDFF;
+}
+
+a {
+	display: block;
+	outline: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: 'Press Start 2P';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+	margin: 0 auto;
+}
+
+a:link {
+	color: #FFFFFF;
+}
+
+a:visited {
+	outline: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: 'Press Start 2P';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+a img {
+    height: 16px;
+    margin-right: 16px;
+    float: right;
+}
+
+.cover_mob {
+	width: 100%;
+}
+
+.cover_desk {
+	width: 100%;
+}
+
+.header-main {
+	margin-top: 24px;
+}
+
+.name {
+	color: #FFFFFF;
+	text-shadow: 2px 2px 0px #FF42EC;
+	margin-top: none;
+}
+
+/*Работает, не трогай*/
+.link {
+    background: #FF258E;
+	border: 5px solid #FFFFFF;
+	box-shadow: 8px 8px 0px #00BDFF;
+	padding: 16px 16px 16px 16px;
+	margin-top: 64px;
+}
+
+.link:hover {
+	background-color: #F3137F;
+}
+
+.link a {
+    display: block; 
+    height: 100%; 
+    color: #666; 
+}
+
+.stek {
+	margin-top: 64px;
+	margin-bottom: 16px;
+}
+
+.contact_name {
+	margin-top: 64px;
+}
+
+.contact {
+	margin-top: 16px;
+}
+
+.contact:hover {
+	color: #00BDFF;
+}
+
+@media (min-width: 700px){
+
+	.cover_desk{
+		display: block;
+	}
+
+	.cover_mob{
+		display: none;
+	}
+
+	h1 {
+		font-size: 38px;
+		line-height: 64px; 
+	}
+
+	.header-main {
+		margin-top: 42px;
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 36px;
+	}
+
+	.stek {
+		margin-top: 88px;
+	}
+	.contact_name {
+
+		margin-top: 88px;
+	}
+
+	.header-main {
+		margin-top: 42px;
+	}
+
+	a img {
+   	 	height: 20px;
+    	margin-right: 20px;
+    	float: right;
+	}
+	body {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+}
+
+@media (max-width: 699px){
+	.cover_desk{
+		display: none;
+	}
+	.cover_mob{
+		display: block;
+	}
+}
+
